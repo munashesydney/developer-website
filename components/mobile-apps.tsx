@@ -23,7 +23,7 @@ const MobileApps = () => {
       description: "Comprehensive trading management solution for Android devices.",
       downloads: "20+ Downloads",
       platforms: [
-        { name: "Android", link: "#" }
+        { name: "Android", link: "https://play.google.com/store/apps/details?id=com.aitrademanager.app&hl=en" }
       ]
     }
   ]

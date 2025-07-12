@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Munashe Sydney Machiwenyika - AI Developer',
-  description: 'Senior Software Developer passionate about building scalable applications and leveraging AI to enhance productivity.',
+  description: 'Intermidiate Software Developer passionate about building scalable applications and leveraging AI to enhance productivity.',
 };
 
 export default function RootLayout({

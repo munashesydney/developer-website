@@ -6,6 +6,12 @@ import { Briefcase, GraduationCap, MapPin, Calendar } from 'lucide-react'
 const ExperienceEducation = () => {
   const experiences = [
     {
+      title: "Software Developer",
+      company: "Data Speckle",
+      date: "Jan 2025 - Jul 2025",
+      description: "Developed and maintained software applications, collaborated with cross-functional teams, and contributed to innovative solutions in data analytics and visualization."
+    },
+    {
       title: "Guest Service Expert",
       company: "Prestige Beach House Hotel, Kelowna",
       date: "Oct 2024 - Ongoing",
@@ -35,7 +41,7 @@ const ExperienceEducation = () => {
   ]
 
   return (
-    <section id="resume" className="py-20 bg-white dark:bg-gray-900">
+    <section id="resume" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Experience */}

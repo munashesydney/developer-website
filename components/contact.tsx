@@ -12,11 +12,18 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
+    
+    // Create mailto link with form data
+    const subject = `Contact from ${formData.name} - Developer Website`
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    
+    const mailtoLink = `mailto:sydneymach1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    
+    // Open default email client
+    window.open(mailtoLink, '_blank')
+    
     // Reset form
     setFormData({ name: '', email: '', message: '' })
-    alert('Message sent successfully!')
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,7 +34,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
+    <section id="contact" className="py-20 bg-rose-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -78,13 +85,17 @@ const Contact = () => {
             <div className="mt-8">
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/munashesydney"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-purple-100 dark:hover:bg-purple-900/30 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-200"
                 >
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/munashe-sydney-641883259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-purple-100 dark:hover:bg-purple-900/30 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-200"
                 >
                   <Linkedin className="w-6 h-6" />

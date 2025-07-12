@@ -9,41 +9,48 @@ const Projects = () => {
       icon: <Zap className="w-6 h-6" />,
       title: "AI Signal Copier",
       description: "AI-powered trade signal automation platform for automated trading strategies",
-      stats: "Active Users: 2000+",
-      demoLink: "#"
+      stats: "Active Users: 3000+",
+      demoLink: "https://aisignalcopier.com"
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
       title: "AI Knowledge Desk", 
       description: "AI-driven help desk platform revolutionizing customer support",
-      stats: "5000+ Users",
-      demoLink: "#"
+      stats: "200+ Users",
+      demoLink: "https://aiknowledgedesk.com"
     },
     {
       icon: <ArrowRightLeft className="w-6 h-6" />,
       title: "AI Telegram Copier",
       description: "Automated Telegram trading bot for signal copying and execution",
       stats: "1M+ Trades Copied",
-      demoLink: "#"
+      demoLink: "https://aitelegramcopier.com"
     },
     {
       icon: <Code className="w-6 h-6" />,
       title: "Fire Snippets",
       description: "AI-enhanced code snippet manager for developers",
       stats: "10K+ Snippets",
-      demoLink: "#"
+      demoLink: "https://firesnippets.com"
     },
     {
       icon: <Shield className="w-6 h-6" />,
       title: "AI Trade Manager",
       description: "Risk management platform for AI trading systems",
-      stats: "$10M+ Managed",
-      demoLink: "#"
+      stats: "$5k+ Managed",
+      demoLink: "https://aitrademanager.com"
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Browserize",
+      description: "Self-scaling API for deploying browsers at scale",
+      stats: "High Performance",
+      demoLink: "https://browserize.com"
     }
   ]
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="py-20 bg-blue-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -76,6 +83,8 @@ const Projects = () => {
               
               <a
                 href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-semibold transition-colors duration-200"
               >
                 Live Demo

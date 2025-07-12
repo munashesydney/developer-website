@@ -12,8 +12,13 @@ const Hero = () => {
   }
 
   const handleDownloadResume = () => {
-    // In a real implementation, this would download your actual resume
-    window.open('#', '_blank')
+    // Download the resume PDF
+    const link = document.createElement('a')
+    link.href = '/resume.pdf'
+    link.download = 'Munashe_Sydney_Resume.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   return (
@@ -30,7 +35,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wide">
-                Junior Software Developer
+                Senior Software Developer
               </p>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 Munashe{' '}
@@ -41,7 +46,7 @@ const Hero = () => {
                 Machiwenyika
               </h1>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed">
-                Aspiring Junior Software Developer passionate about building scalable 
+                Aspiring Senior Software Developer passionate about building scalable 
                 applications and improving user experiences. I actively leverage advancements 
                 in Artificial Intelligence to streamline workflows, automate repetitive tasks, 
                 and enhance productivity.
